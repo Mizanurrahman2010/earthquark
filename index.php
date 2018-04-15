@@ -11,7 +11,7 @@ require_once 'CommunicationList.php';
 
 $Name = $RichterScale = $Location = $Time = $WaterLevel = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST")
+if ($_SERVER["REQUEST_METHOD"] == "POST" AND isset($_GET['l']))
 {
     $RichterScale = $_GET["r"];
     $Location     = $_GET["l"];
